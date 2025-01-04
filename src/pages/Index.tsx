@@ -28,14 +28,14 @@ const Index = () => {
       {/* Image Collage Background */}
       <div className="absolute inset-0 grid grid-cols-2 gap-4 p-4 opacity-40">
         <div className="space-y-4">
-          <div className="h-[33vh] bg-[url('https://images.unsplash.com/photo-1501281668745-f7f57925c3b4')] bg-cover bg-center rounded-lg"></div>
-          <div className="h-[33vh] bg-[url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30')] bg-cover bg-center rounded-lg"></div>
-          <div className="h-[33vh] bg-[url('https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec')] bg-cover bg-center rounded-lg"></div>
+          <div className="h-[33vh] bg-[url('/lovable-uploads/bff65142-fc46-4211-85bb-9b2ca5643cdc.png')] bg-cover bg-center rounded-lg transition-transform duration-[15s] ease-in-out hover:scale-110 hover:rotate-1"></div>
+          <div className="h-[33vh] bg-[url('/lovable-uploads/992d573b-fb7d-49f5-b1a5-9f73f4a64958.png')] bg-cover bg-center rounded-lg transition-transform duration-[15s] ease-in-out hover:scale-110 hover:-rotate-1"></div>
+          <div className="h-[33vh] bg-[url('/lovable-uploads/9decd922-0f0b-4f3c-b43d-e6d9631b5838.png')] bg-cover bg-center rounded-lg transition-transform duration-[15s] ease-in-out hover:scale-110 hover:rotate-1"></div>
         </div>
         <div className="space-y-4 pt-8">
-          <div className="h-[33vh] bg-[url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745')] bg-cover bg-center rounded-lg"></div>
-          <div className="h-[33vh] bg-[url('https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b')] bg-cover bg-center rounded-lg"></div>
-          <div className="h-[33vh] bg-[url('https://images.unsplash.com/photo-1505236858219-8359eb29e329')] bg-cover bg-center rounded-lg"></div>
+          <div className="h-[33vh] bg-[url('/lovable-uploads/8f31b95e-c2e9-4cdc-8806-44247c224597.png')] bg-cover bg-center rounded-lg transition-transform duration-[15s] ease-in-out hover:scale-110 hover:-rotate-1"></div>
+          <div className="h-[33vh] bg-[url('/lovable-uploads/883b23bb-c2f0-45dd-a233-c13bc8353572.png')] bg-cover bg-center rounded-lg transition-transform duration-[15s] ease-in-out hover:scale-110 hover:rotate-1"></div>
+          <div className="h-[33vh] bg-[url('/lovable-uploads/61875e52-49f5-49cf-b9d5-4e9c9a18c8f4.png')] bg-cover bg-center rounded-lg transition-transform duration-[15s] ease-in-out hover:scale-110 hover:-rotate-1"></div>
         </div>
       </div>
 
