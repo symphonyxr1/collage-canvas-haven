@@ -14,8 +14,8 @@ const Index = () => {
     <div className="min-h-screen bg-richBlack relative overflow-hidden">
       {/* Navigation */}
       <nav className="absolute top-0 w-full z-50 px-6 py-4">
-        <div className="flex flex-col items-center">
-          <div className="text-warmBeige text-xl font-playfair mb-4">High Ground</div>
+        <div className="flex justify-between items-center">
+          <div className="text-warmBeige text-xl font-playfair font-bold">High Ground</div>
           <div className="flex gap-8">
             <a href="#" className="text-warmBeige/80 hover:text-warmBeige transition-colors">Events</a>
             <a href="#" className="text-warmBeige/80 hover:text-warmBeige transition-colors">Music</a>
