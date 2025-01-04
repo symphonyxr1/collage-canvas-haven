@@ -11,16 +11,16 @@ const Index = () => {
   if (!mounted) return null;
 
   return (
-    <div className="min-h-screen bg-richBlack relative overflow-hidden">
+    <div className="min-h-screen bg-warmBeige relative overflow-hidden">
       {/* Navigation */}
       <nav className="absolute top-0 w-full z-50 px-6 py-4">
         <div className="flex justify-between items-center">
-          <div className="text-warmBeige text-xl font-playfair">High Ground</div>
+          <div className="text-richBlack text-xl font-playfair">High Ground</div>
           <div className="flex gap-8">
-            <a href="#" className="text-warmBeige hover:text-white transition-colors">Events</a>
-            <a href="#" className="text-warmBeige hover:text-white transition-colors">Music</a>
-            <a href="#" className="text-warmBeige hover:text-white transition-colors">Community</a>
-            <a href="#" className="text-warmBeige hover:text-white transition-colors">Blog</a>
+            <a href="#" className="text-richBlack hover:text-burgundy transition-colors">Events</a>
+            <a href="#" className="text-richBlack hover:text-burgundy transition-colors">Music</a>
+            <a href="#" className="text-richBlack hover:text-burgundy transition-colors">Community</a>
+            <a href="#" className="text-richBlack hover:text-burgundy transition-colors">Blog</a>
           </div>
         </div>
       </nav>
@@ -41,15 +41,15 @@ const Index = () => {
         </div>
       </div>
 
-      {/* Overlay - Removed burgundy gradient */}
-      <div className="absolute inset-0 bg-richBlack/90"></div>
+      {/* Overlay with 90% opacity */}
+      <div className="absolute inset-0 bg-[#FDE1D3]/90"></div>
 
       {/* Content */}
       <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 text-center">
-        <h1 className="text-7xl md:text-8xl font-playfair text-warmBeige mb-8 tracking-wider">
+        <h1 className="text-7xl md:text-8xl font-playfair text-richBlack mb-8 tracking-wider">
           Timeless Aura
         </h1>
-        <p className="text-warmBeige/90 max-w-3xl mx-auto text-lg md:text-xl font-inter leading-relaxed mb-12">
+        <p className="text-richBlack/90 max-w-3xl mx-auto text-lg md:text-xl font-inter leading-relaxed mb-12">
           We build spaces for artists to thrive. From studio sessions to live shows, High Ground is a place where raw talent lives and grows. Connect with fellow creators, share your sound, and push your art further than you thought possible.
         </p>
         <div className="flex gap-6">
@@ -60,7 +60,7 @@ const Index = () => {
           </Button>
           <Button
             variant="outline"
-            className="border-warmBeige text-warmBeige hover:bg-warmBeige/10 px-8 py-6 text-lg rounded-full transition-colors"
+            className="border-burgundy text-burgundy hover:bg-burgundy/10 px-8 py-6 text-lg rounded-full transition-colors"
           >
             Join Community
           </Button>
