@@ -41,8 +41,8 @@ const Index = () => {
         </div>
       </div>
 
-      {/* Overlay with 90% opacity */}
-      <div className="absolute inset-0 bg-[#FDE1D3]/90"></div>
+      {/* Overlay with very low opacity */}
+      <div className="absolute inset-0 bg-[#FDE1D3]/30"></div>
 
       {/* Content */}
       <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 text-center">
