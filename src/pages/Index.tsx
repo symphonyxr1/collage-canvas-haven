@@ -15,7 +15,7 @@ const Index = () => {
       {/* Navigation */}
       <nav className="absolute top-0 w-full z-50 px-6 py-4">
         <div className="flex justify-between items-center">
-          <div className="text-warmBeige text-xl font-playfair font-bold">High Ground</div>
+          <div className="text-warmBeige text-xl font-playfair">High Ground</div>
           <div className="flex gap-8">
             <a href="#" className="text-warmBeige/80 hover:text-warmBeige transition-colors">Events</a>
             <a href="#" className="text-warmBeige/80 hover:text-warmBeige transition-colors">Music</a>
@@ -46,7 +46,7 @@ const Index = () => {
 
       {/* Content */}
       <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 text-center">
-        <h1 className="text-7xl md:text-8xl font-playfair font-bold mb-8 tracking-wider bg-gradient-to-r from-warmBeige to-warmBeige/70 text-transparent bg-clip-text">
+        <h1 className="text-7xl md:text-8xl font-playfair text-warmBeige mb-8 tracking-wider">
           Timeless Aura
         </h1>
         <p className="text-warmBeige/90 max-w-3xl mx-auto text-lg md:text-xl font-inter leading-relaxed mb-12">
