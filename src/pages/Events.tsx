@@ -35,60 +35,72 @@ const Events = () => {
   };
 
   return (
-    <div className="min-h-screen bg-richBlack p-8">
-      <div className="max-w-6xl mx-auto">
-        <h1 className="text-4xl font-playfair font-bold text-warmBeige mb-12 text-center">
-          Upcoming Events
-        </h1>
-        
-        <div className="grid gap-8 md:grid-cols-2">
-          {events.map((event, index) => (
-            <div
-              key={event.id}
-              className={`transform transition-all duration-300 ${
-                index % 2 === 0 ? "md:translate-y-12" : ""
-              }`}
-            >
-              <Card
-                className={`cursor-pointer transition-all duration-300 hover:scale-105 ${
-                  expandedId === event.id
-                    ? "fixed inset-4 z-50 overflow-hidden"
-                    : "bg-warmBeige/10 hover:bg-warmBeige/20"
+    <div className="min-h-screen bg-richBlack relative">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-[url('/lovable-uploads/aee09444-0a2c-441b-9bc2-c8cdce4fad05.png')] bg-cover bg-center opacity-40"
+        style={{ backgroundSize: '400px' }}
+      />
+      
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-richBlack/60 via-richBlack/40 to-richBlack/60" />
+
+      {/* Content */}
+      <div className="relative z-10 p-8">
+        <div className="max-w-6xl mx-auto">
+          <h1 className="text-4xl font-playfair font-bold mb-12 text-center bg-gradient-to-r from-[#e6b980] to-[#eacda3] text-transparent bg-clip-text">
+            Upcoming Events
+          </h1>
+          
+          <div className="grid gap-8 md:grid-cols-2">
+            {events.map((event, index) => (
+              <div
+                key={event.id}
+                className={`transform transition-all duration-300 ${
+                  index % 2 === 0 ? "md:translate-y-12" : ""
                 }`}
-                onClick={() => toggleExpand(event.id)}
               >
-                {expandedId === event.id ? (
-                  <ScrollArea className="h-full">
-                    <div className="bg-black/90 text-warmBeige h-full p-6">
+                <Card
+                  className={`cursor-pointer transition-all duration-300 hover:scale-105 ${
+                    expandedId === event.id
+                      ? "fixed inset-4 z-50 overflow-hidden"
+                      : "bg-warmBeige/10 hover:bg-warmBeige/20 backdrop-blur-sm"
+                  }`}
+                  onClick={() => toggleExpand(event.id)}
+                >
+                  {expandedId === event.id ? (
+                    <ScrollArea className="h-full">
+                      <div className="bg-black/90 text-warmBeige h-full p-6">
+                        <CardHeader>
+                          <CardTitle className="text-3xl font-playfair">
+                            {event.title}
+                          </CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                          <p className="font-inter leading-relaxed">
+                            {event.fullDescription}
+                          </p>
+                        </CardContent>
+                      </div>
+                    </ScrollArea>
+                  ) : (
+                    <>
                       <CardHeader>
-                        <CardTitle className="text-3xl font-playfair">
+                        <CardTitle className="text-2xl font-playfair text-warmBeige">
                           {event.title}
                         </CardTitle>
                       </CardHeader>
                       <CardContent>
-                        <p className="font-inter leading-relaxed">
-                          {event.fullDescription}
+                        <p className="font-inter text-warmBeige/80">
+                          {event.shortDescription}
                         </p>
                       </CardContent>
-                    </div>
-                  </ScrollArea>
-                ) : (
-                  <>
-                    <CardHeader>
-                      <CardTitle className="text-2xl font-playfair text-warmBeige">
-                        {event.title}
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="font-inter text-warmBeige/80">
-                        {event.shortDescription}
-                      </p>
-                    </CardContent>
-                  </>
-                )}
-              </Card>
-            </div>
-          ))}
+                    </>
+                  )}
+                </Card>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
