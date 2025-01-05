@@ -43,7 +43,7 @@ const Index = () => {
       </div>
 
       {/* Dark overlay with gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-richBlack/80 via-richBlack/60 to-richBlack/80"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-richBlack/60 via-richBlack/40 to-richBlack/60"></div>
 
       {/* Content */}
       <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 text-center">
