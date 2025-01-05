@@ -27,7 +27,7 @@ const Events = () => {
   return (
     <div className="min-h-screen bg-warmBeige relative">
       {/* Navigation */}
-      <nav className="absolute top-0 w-full z-50 px-6 py-4 bg-richBlack">
+      <nav className="absolute top-0 w-full z-50 px-6 py-4 bg-burgundy">
         <div className="flex justify-between items-center">
           <Link to="/" className="text-xl font-playfair font-bold bg-gradient-to-r from-[#e6b980] to-[#eacda3] text-transparent bg-clip-text">
             High Ground
@@ -44,7 +44,7 @@ const Events = () => {
 
       {/* Content */}
       <div className="pt-24 px-6 md:px-12 max-w-7xl mx-auto">
-        <h1 className="text-5xl md:text-6xl font-playfair font-bold mb-12 text-burgundy text-center">
+        <h1 className="text-5xl md:text-6xl font-playfair font-bold mb-12 bg-gradient-to-r from-[#e6b980] to-[#eacda3] text-transparent bg-clip-text text-center">
           Upcoming Events
         </h1>
         
