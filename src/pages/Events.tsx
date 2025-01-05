@@ -59,7 +59,7 @@ const Events = () => {
               <Card
                 className={`overflow-hidden transition-all duration-500 cursor-pointer ${
                   expandedEvent === event.id
-                    ? "fixed inset-4 z-50 md:inset-20 bg-richBlack"
+                    ? "fixed inset-4 z-50 md:inset-20 bg-burgundy"
                     : "bg-burgundy hover:shadow-xl"
                 }`}
                 onClick={() => setExpandedEvent(expandedEvent === event.id ? null : event.id)}
@@ -71,7 +71,7 @@ const Events = () => {
                         className="h-[40vh] bg-cover bg-center"
                         style={{ backgroundImage: `url(${event.image})` }}
                       />
-                      <div className="p-6 text-warmBeige flex-1 overflow-y-auto">
+                      <div className="p-6 text-warmBeige flex-1 overflow-y-auto bg-burgundy">
                         <h2 className="text-3xl font-playfair font-bold mb-2">{event.title}</h2>
                         <p className="text-warmBeige/80 mb-4">{event.date} | {event.location}</p>
                         <p className="text-lg leading-relaxed">{event.description}</p>
@@ -101,7 +101,7 @@ const Events = () => {
       {/* Overlay when event is expanded */}
       {expandedEvent !== null && (
         <div
-          className="fixed inset-0 bg-black/50 z-40"
+          className="fixed inset-0 bg-burgundy/50 backdrop-blur-sm z-40"
           onClick={() => setExpandedEvent(null)}
         />
       )}
