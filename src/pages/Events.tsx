@@ -25,7 +25,15 @@ const Events = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-warmBeige relative">
+    <div 
+      className="min-h-screen relative"
+      style={{
+        backgroundImage: `url('/lovable-uploads/8923b3e8-dfa5-40bf-b7f3-b0bcfa105711.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
       {/* Navigation */}
       <nav className="absolute top-0 w-full z-50 px-6 py-4 bg-burgundy">
         <div className="flex justify-between items-center">
