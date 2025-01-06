@@ -25,7 +25,7 @@ const Events = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-warmBeige relative">
+    <div className="min-h-screen bg-tan relative">
       {/* Navigation */}
       <nav className="absolute top-0 w-full z-50 px-6 py-4 bg-burgundy">
         <div className="flex justify-between items-center">
