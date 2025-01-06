@@ -15,11 +15,11 @@ const Blog = () => {
     <div 
       className="min-h-screen bg-cover bg-center bg-no-repeat relative"
       style={{
-        backgroundImage: "url('/lovable-uploads/190a15e3-b5db-4136-97fb-d1f53a99a2a5.png')",
+        backgroundImage: "url('/lovable-uploads/0293a007-89a9-40ea-89c1-190fa6a7d2b4.png')",
       }}
     >
-      {/* Dark overlay with increased opacity */}
-      <div className="absolute inset-0 bg-black/70" />
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black/50" />
 
       {/* Content container */}
       <div className="relative z-10">
@@ -46,19 +46,12 @@ const Blog = () => {
           </h1>
           <div className="max-w-3xl mx-auto">
             <Card 
-              className={`bg-black/80 backdrop-blur-sm text-warmBeige cursor-pointer transition-all duration-500 ${
+              className={`bg-black/40 backdrop-blur-sm text-warmBeige cursor-pointer transition-all duration-500 ${
                 isExpanded ? 'fixed inset-4 z-50 overflow-auto' : 'hover:scale-[1.02]'
               }`}
               onClick={() => setIsExpanded(!isExpanded)}
             >
               <CardHeader>
-                <div className="w-full aspect-square mb-6">
-                  <img 
-                    src="/lovable-uploads/260833e8-8986-460a-affe-103407111046.png"
-                    alt="High Ground Abstract Pattern"
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </div>
                 <CardTitle className="text-2xl font-playfair">High Ground: A Space for Visionaries to Create, Connect, and Elevate</CardTitle>
                 {!isExpanded && (
                   <CardDescription className="text-warmBeige/80">
