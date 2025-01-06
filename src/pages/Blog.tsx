@@ -85,7 +85,7 @@ const Blog = () => {
                 <img 
                   src="/lovable-uploads/e08478de-ebd0-4c20-ad6c-8c151643fa89.png"
                   alt="High Ground Abstract Pattern"
-                  className="w-full h-48 object-cover mb-6 rounded-lg"
+                  className="w-full h-96 object-cover mb-6 rounded-lg" // Changed h-48 to h-96 to double the height
                 />
                 <h2 className="text-2xl font-playfair font-bold text-warmBeige mb-4">
                   High Ground: A Space for Visionaries to Create, Connect, and Elevate
