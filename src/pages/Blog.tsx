@@ -15,7 +15,7 @@ const Blog = () => {
     <div 
       className="min-h-screen bg-cover bg-center bg-no-repeat relative"
       style={{
-        backgroundImage: "url('/lovable-uploads/33764487-707c-4aae-956d-630753c815bb.png')",
+        backgroundImage: "url('/lovable-uploads/0293a007-89a9-40ea-89c1-190fa6a7d2b4.png')",
       }}
     >
       {/* Dark overlay */}
