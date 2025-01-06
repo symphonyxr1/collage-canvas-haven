@@ -52,6 +52,13 @@ const Blog = () => {
               onClick={() => setIsExpanded(!isExpanded)}
             >
               <CardHeader>
+                <div className="w-full aspect-square mb-6">
+                  <img 
+                    src="/lovable-uploads/260833e8-8986-460a-affe-103407111046.png"
+                    alt="High Ground Abstract Pattern"
+                    className="w-full h-full object-cover rounded-lg"
+                  />
+                </div>
                 <CardTitle className="text-2xl font-playfair">High Ground: A Space for Visionaries to Create, Connect, and Elevate</CardTitle>
                 {!isExpanded && (
                   <CardDescription className="text-warmBeige/80">
