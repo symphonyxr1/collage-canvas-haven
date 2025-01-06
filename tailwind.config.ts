@@ -30,7 +30,6 @@ export default {
         },
         warmBeige: "#F5E6E8",
         richBlack: "#0A0A0A",
-        tan: "#D2B48C",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
