@@ -9,7 +9,7 @@ const Events = () => {
     {
       id: 1,
       title: "Artist Meet-up at The Turns",
-      date: "January 21, 2024",
+      date: "January 21, 2025",
       location: "Carlsbad, CA",
       image: "/lovable-uploads/8f040586-821b-4b83-a81b-f7101b3c542e.png",
       description: "Join fellow artists for an evening of creativity and connection at The Turns. Share your work, meet like-minded creators, and be inspired by the stunning coastal views. This gathering is perfect for both established artists and those just beginning their creative journey.",
@@ -17,7 +17,7 @@ const Events = () => {
     {
       id: 2,
       title: "Sunset Photography Session",
-      date: "January 28, 2024",
+      date: "January 28, 2025",
       location: "High Ground Studio",
       image: "/lovable-uploads/00bb19d5-2d78-4af3-a40f-4a54b1e7a689.png",
       description: "Capture the magic of golden hour with our community of photographers. Whether you're a professional or enthusiast, this session offers the perfect opportunity to expand your portfolio and learn from fellow photographers.",
@@ -25,7 +25,12 @@ const Events = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-warmBeige relative">
+    <div className="min-h-screen relative" style={{
+      backgroundImage: `url('/lovable-uploads/d40edc17-91d8-423d-aa3b-9fe61e5e94f1.png')`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundAttachment: 'fixed'
+    }}>
       {/* Navigation */}
       <nav className="absolute top-0 w-full z-50 px-6 py-4 bg-burgundy">
         <div className="flex justify-between items-center">
