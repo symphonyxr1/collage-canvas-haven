@@ -54,7 +54,7 @@ const Blog = () => {
             <img 
               src="/lovable-uploads/ede63e5f-dd66-47da-81c1-e13fdc6c9e9f.png" 
               alt="High Ground" 
-              className="w-full h-64 object-cover"
+              className="w-full object-contain"
             />
             <div className="p-6">
               <h2 className="text-2xl font-playfair font-bold text-warmBeige mb-4">
@@ -80,7 +80,7 @@ const Blog = () => {
             <img 
               src="/lovable-uploads/ede63e5f-dd66-47da-81c1-e13fdc6c9e9f.png" 
               alt="High Ground" 
-              className="w-full h-64 object-cover rounded-lg mb-6"
+              className="w-full object-contain rounded-lg mb-6"
             />
             <p>
               High Ground is a community built for creators who seek to transform their ideas into impactful projects. By offering unique spaces for collaboration and skill-building, we provide artists and innovators the resources they need to grow. Here, creativity flourishes in an environment designed to inspire and connect.
