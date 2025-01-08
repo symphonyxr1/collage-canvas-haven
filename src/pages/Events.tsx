@@ -48,7 +48,7 @@ const Events = () => {
 
       {/* Content */}
       <div className="pt-24 px-6 md:px-12 max-w-7xl mx-auto">
-        <h1 className="text-5xl md:text-6xl font-playfair font-bold mb-12 bg-gradient-to-r from-[#e6b980] to-[#eacda3] text-transparent bg-clip-text text-center">
+        <h1 className="text-5xl md:text-6xl font-playfair font-bold mb-12 text-white text-center">
           Upcoming Events
         </h1>
         
