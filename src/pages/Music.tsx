@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import WaveAnimation from "@/components/WaveAnimation";
 
 const Music = () => {
   const [mounted, setMounted] = useState(false);
@@ -37,6 +38,7 @@ const Music = () => {
 
       {/* Content */}
       <div className="relative z-10 pt-24 px-6 md:px-12 max-w-7xl mx-auto">
+        <WaveAnimation />
         <h1 className="text-5xl md:text-6xl font-playfair font-bold mb-12 bg-gradient-to-r from-[#e6b980] to-[#eacda3] text-transparent bg-clip-text text-center">
           Radio
         </h1>
