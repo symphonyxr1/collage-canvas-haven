@@ -1,28 +1,29 @@
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Music = () => {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+
   return (
-    <div className="min-h-screen relative overflow-hidden">
-      {/* Background Image with Vignette Overlay */}
+    <div className="min-h-screen bg-richBlack relative overflow-hidden">
+      {/* Background Image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: "url('/lovable-uploads/27b5e62e-29ff-4963-909b-67e69f6f7db1.png')"
-        }}
-      />
-      
-      {/* Vignette Overlay */}
-      <div 
-        className="absolute inset-0"
-        style={{
-          background: "radial-gradient(circle at center, transparent 0%, rgba(74, 4, 4, 0.4) 50%, rgba(74, 4, 4, 0.8) 100%)"
+        className="absolute inset-0 bg-cover bg-center opacity-60"
+        style={{ 
+          backgroundImage: "url('/lovable-uploads/27b5e62e-29ff-4963-909b-67e69f6f7db1.png')",
         }}
       />
 
       {/* Navigation */}
-      <nav className="absolute top-0 w-full z-50 px-6 py-4 bg-burgundy bg-opacity-90">
+      <nav className="absolute top-0 w-full z-50 px-6 py-4">
         <div className="flex justify-between items-center">
-          <Link to="/" className="text-xl font-playfair font-bold bg-gradient-to-r from-[#e6b980] to-[#eacda3] text-transparent bg-clip-text">
+          <Link to="/" className="text-2xl font-playfair font-bold bg-gradient-to-r from-[#e6b980] to-[#eacda3] text-transparent bg-clip-text">
             High Ground
           </Link>
           <div className="flex-1 flex justify-center gap-8">

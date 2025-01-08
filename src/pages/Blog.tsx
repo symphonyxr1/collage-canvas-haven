@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import {
   Dialog,
   DialogContent,
@@ -30,13 +31,13 @@ const Blog = () => {
       {/* Navigation */}
       <nav className="absolute top-0 w-full z-50 px-6 py-4">
         <div className="flex justify-between items-center">
-          <div className="text-xl font-playfair font-bold bg-gradient-to-r from-[#e6b980] to-[#eacda3] text-transparent bg-clip-text">
+          <Link to="/" className="text-2xl font-playfair font-bold bg-gradient-to-r from-[#e6b980] to-[#eacda3] text-transparent bg-clip-text">
             High Ground
-          </div>
+          </Link>
           <div className="flex-1 flex justify-center gap-8">
-            <a href="/events" className="text-warmBeige/80 hover:text-warmBeige transition-colors">Events</a>
-            <a href="/music" className="text-warmBeige/80 hover:text-warmBeige transition-colors">Music</a>
-            <a href="/blog" className="text-warmBeige/80 hover:text-warmBeige transition-colors">Blog</a>
+            <Link to="/events" className="text-warmBeige/80 hover:text-warmBeige transition-colors">Events</Link>
+            <Link to="/music" className="text-warmBeige/80 hover:text-warmBeige transition-colors">Music</Link>
+            <Link to="/blog" className="text-warmBeige/80 hover:text-warmBeige transition-colors">Blog</Link>
           </div>
           <div className="w-[100px]"></div>
         </div>

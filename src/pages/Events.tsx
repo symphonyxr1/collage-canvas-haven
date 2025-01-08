@@ -31,11 +31,10 @@ const Events = () => {
       backgroundPosition: 'center',
       backgroundAttachment: 'fixed'
     }}>
-
       {/* Navigation */}
       <nav className="absolute top-0 w-full z-50 px-6 py-4 bg-burgundy bg-opacity-90">
         <div className="flex justify-between items-center">
-          <Link to="/" className="text-xl font-playfair font-bold bg-gradient-to-r from-[#e6b980] to-[#eacda3] text-transparent bg-clip-text">
+          <Link to="/" className="text-2xl font-playfair font-bold bg-gradient-to-r from-[#e6b980] to-[#eacda3] text-transparent bg-clip-text">
             High Ground
           </Link>
           <div className="flex-1 flex justify-center gap-8">
