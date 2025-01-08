@@ -46,7 +46,7 @@ const Blog = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 pt-32">
         {/* Page Title */}
-        <h1 className="text-4xl font-playfair font-bold bg-gradient-to-r from-[#e6b980] to-[#eacda3] text-transparent bg-clip-text mb-12 text-center">
+        <h1 className="text-5xl md:text-6xl font-playfair font-bold bg-gradient-to-r from-[#e6b980] to-[#eacda3] text-transparent bg-clip-text mb-12 text-center">
           Blog
         </h1>
 
