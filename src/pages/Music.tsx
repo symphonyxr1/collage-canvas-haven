@@ -28,7 +28,6 @@ const Music = () => {
           <div className="flex-1 flex justify-center gap-8">
             <Link to="/events" className="text-warmBeige/80 hover:text-warmBeige transition-colors">Events</Link>
             <Link to="/music" className="text-warmBeige/80 hover:text-warmBeige transition-colors">Music</Link>
-            <Link to="/community" className="text-warmBeige/80 hover:text-warmBeige transition-colors">Community</Link>
             <Link to="/blog" className="text-warmBeige/80 hover:text-warmBeige transition-colors">Blog</Link>
           </div>
           <div className="w-[100px]"></div>

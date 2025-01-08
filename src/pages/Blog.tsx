@@ -36,7 +36,6 @@ const Blog = () => {
           <div className="flex-1 flex justify-center gap-8">
             <a href="/events" className="text-warmBeige/80 hover:text-warmBeige transition-colors">Events</a>
             <a href="/music" className="text-warmBeige/80 hover:text-warmBeige transition-colors">Music</a>
-            <a href="#" className="text-warmBeige/80 hover:text-warmBeige transition-colors">Community</a>
             <a href="/blog" className="text-warmBeige/80 hover:text-warmBeige transition-colors">Blog</a>
           </div>
           <div className="w-[100px]"></div>

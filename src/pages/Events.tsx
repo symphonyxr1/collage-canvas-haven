@@ -31,17 +31,17 @@ const Events = () => {
       backgroundPosition: 'center',
       backgroundAttachment: 'fixed'
     }}>
+
       {/* Navigation */}
-      <nav className="absolute top-0 w-full z-50 px-6 py-4 bg-burgundy">
+      <nav className="absolute top-0 w-full z-50 px-6 py-4 bg-burgundy bg-opacity-90">
         <div className="flex justify-between items-center">
           <Link to="/" className="text-xl font-playfair font-bold bg-gradient-to-r from-[#e6b980] to-[#eacda3] text-transparent bg-clip-text">
             High Ground
           </Link>
           <div className="flex-1 flex justify-center gap-8">
             <Link to="/events" className="text-warmBeige/80 hover:text-warmBeige transition-colors">Events</Link>
-            <a href="#" className="text-warmBeige/80 hover:text-warmBeige transition-colors">Music</a>
-            <a href="#" className="text-warmBeige/80 hover:text-warmBeige transition-colors">Community</a>
-            <a href="#" className="text-warmBeige/80 hover:text-warmBeige transition-colors">Blog</a>
+            <Link to="/music" className="text-warmBeige/80 hover:text-warmBeige transition-colors">Music</Link>
+            <Link to="/blog" className="text-warmBeige/80 hover:text-warmBeige transition-colors">Blog</Link>
           </div>
           <div className="w-[100px]"></div>
         </div>
