@@ -26,7 +26,7 @@ const Events = () => {
 
   return (
     <div className="min-h-screen relative" style={{
-      backgroundImage: `url('/lovable-uploads/d40edc17-91d8-423d-aa3b-9fe61e5e94f1.png')`,
+      backgroundImage: `url('/lovable-uploads/972c3ecc-0864-4205-91ff-b6bb14fdcf1c.png')`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundAttachment: 'fixed'
