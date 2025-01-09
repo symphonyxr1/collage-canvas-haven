@@ -7,7 +7,6 @@ import Index from "./pages/Index";
 import Events from "./pages/Events";
 import Music from "./pages/Music";
 import Blog from "./pages/Blog";
-import Footer from "./components/Footer";
 
 const queryClient = new QueryClient();
 
@@ -23,7 +22,6 @@ const App = () => (
           <Route path="/music" element={<Music />} />
           <Route path="/blog" element={<Blog />} />
         </Routes>
-        <Footer />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
