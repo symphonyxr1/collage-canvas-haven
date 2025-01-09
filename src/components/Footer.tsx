@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="fixed bottom-0 left-0 right-0 bg-black/50 py-4 px-6">
+    <footer className="bg-black/50 py-4 px-6 mt-12">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <a 
           href="https://www.instagram.com/highgroundexperience" 
