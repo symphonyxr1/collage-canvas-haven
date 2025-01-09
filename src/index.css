@@ -47,11 +47,11 @@
 }
 
 .wave {
-  width: 1.8rem;
-  height: 150px;
+  width: 0.9rem;  /* Reduced from 1.8rem */
+  height: 75px;   /* Reduced from 150px */
   background: white;
-  margin: 0 4px;
-  border-radius: 0.4rem;
+  margin: 0 2px;  /* Reduced from 4px */
+  border-radius: 0.2rem;  /* Reduced from 0.4rem */
   animation: wave 1.5s linear infinite;
   transform-origin: center;
 }
