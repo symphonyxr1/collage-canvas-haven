@@ -17,17 +17,13 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <div className="min-h-screen flex flex-col">
-          <div className="flex-1">
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/events" element={<Events />} />
-              <Route path="/music" element={<Music />} />
-              <Route path="/blog" element={<Blog />} />
-            </Routes>
-          </div>
-          <Footer />
-        </div>
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/music" element={<Music />} />
+          <Route path="/blog" element={<Blog />} />
+        </Routes>
+        <Footer />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
