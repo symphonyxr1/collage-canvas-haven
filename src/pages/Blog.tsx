@@ -23,8 +23,8 @@ const Blog = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center"
         style={{ 
-          backgroundImage: "url('/lovable-uploads/d2761c54-f493-4045-b3ca-fd81cec157ae.png')",
-          filter: "brightness(0.6)"
+          backgroundImage: "url('/lovable-uploads/fa7bce8d-9316-4f44-b9e0-871c7317a8cc.png')",
+          opacity: 0.15
         }}
       />
 
