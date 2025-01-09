@@ -37,7 +37,7 @@ const Index = () => {
         </div>
         <div className="space-y-4 pt-8">
           <div className="h-[50vh] bg-[url('/lovable-uploads/883b23bb-c2f0-45dd-a233-c13bc8353572.png')] bg-cover bg-center rounded-lg transition-transform duration-[15s] ease-in-out hover:scale-110 hover:rotate-1"></div>
-          <div className="h-[50vh] bg-[url('/lovable-uploads/61875e52-49f5-49cf-b9d5-4e9c9a18c8f4.png')] bg-cover bg-center rounded-lg transition-transform duration-[15s] ease-in-out hover:scale-110 hover:-rotate-1"></div>
+          <div className="h-[50vh] bg-[url('/lovable-uploads/6ac1d71e-d191-48c8-a79f-34eddc52d514.png')] bg-cover bg-center rounded-lg transition-transform duration-[15s] ease-in-out hover:scale-110 hover:-rotate-1"></div>
         </div>
       </div>
 
