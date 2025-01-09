@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   const [mounted, setMounted] = useState(false);
@@ -53,11 +54,13 @@ const Index = () => {
           We build spaces for artists to thrive. From studio sessions to live shows, High Ground is a place where raw talent lives and grows. Connect with fellow creators, share your sound, and push your art further than you thought possible.
         </p>
         <div className="flex gap-6">
-          <Button
-            className="bg-burgundy hover:bg-burgundy-light text-warmBeige px-8 py-6 text-lg rounded-full transition-colors"
-          >
-            Explore Events
-          </Button>
+          <Link to="/events">
+            <Button
+              className="bg-burgundy hover:bg-burgundy-light text-warmBeige px-8 py-6 text-lg rounded-full transition-colors"
+            >
+              Explore Events
+            </Button>
+          </Link>
           <Button
             variant="outline"
             className="border-warmBeige text-warmBeige hover:bg-warmBeige/10 px-8 py-6 text-lg rounded-full transition-colors"
