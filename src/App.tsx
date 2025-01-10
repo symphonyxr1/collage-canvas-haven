@@ -14,14 +14,14 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <BrowserRouter>
+        <Toaster />
+        <Sonner />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/events" element={<Events />} />
           <Route path="/music" element={<Music />} />
           <Route path="/blog" element={<Blog />} />
         </Routes>
-        <Toaster />
-        <Sonner />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
