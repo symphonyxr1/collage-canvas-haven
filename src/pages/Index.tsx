@@ -17,11 +17,6 @@ const Index = () => {
       <nav className="absolute top-0 w-full z-50 px-6 py-4">
         <div className="flex justify-between items-center">
           <div className="text-2xl font-playfair font-bold bg-gradient-to-r from-[#e6b980] to-[#eacda3] text-transparent bg-clip-text">High Ground</div>
-          <div className="flex-1 flex justify-center gap-8">
-            <Link to="/events" className="text-warmBeige/80 hover:text-warmBeige transition-colors">Events</Link>
-            <Link to="/music" className="text-warmBeige/80 hover:text-warmBeige transition-colors">Music</Link>
-            <Link to="/blog" className="text-warmBeige/80 hover:text-warmBeige transition-colors">Blog</Link>
-          </div>
           <div className="w-[100px]"></div>
         </div>
       </nav>
@@ -69,6 +64,15 @@ const Index = () => {
           </Button>
         </div>
       </div>
+
+      {/* Bottom Navigation Menu */}
+      <nav className="fixed bottom-8 left-0 right-0 z-50">
+        <div className="flex justify-center gap-8 bg-black/50 backdrop-blur-sm py-4 px-8 rounded-full mx-auto w-fit">
+          <Link to="/events" className="text-warmBeige/80 hover:text-warmBeige transition-colors">Events</Link>
+          <Link to="/music" className="text-warmBeige/80 hover:text-warmBeige transition-colors">Music</Link>
+          <Link to="/blog" className="text-warmBeige/80 hover:text-warmBeige transition-colors">Blog</Link>
+        </div>
+      </nav>
     </div>
   );
 };
